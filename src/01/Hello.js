@@ -29,6 +29,7 @@
 
 import logo from '../logo.svg';
 import './Hello.css';
+import MyClockImage from '../02/MyClockImage';
 
 const Hello = () => {
     let name = '황선영';
@@ -40,10 +41,11 @@ const Hello = () => {
                 <div>
                     <img src={logo} className='App-logo' alt='logo'/>
                 </div>
+                <MyClockImage />
                 <footer>
                     <hgroup>
                         <h1>{name}</h1>
-                        <h2><a href='{git}'>{git}</a></h2>
+                        <h2><a href={git}>{git}</a></h2>
                     </hgroup>
                     <h1>Hello React!</h1>
                 </footer>
