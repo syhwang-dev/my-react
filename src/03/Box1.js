@@ -18,9 +18,10 @@ const Box = () => {
                             <th scope="col">증감</th>
                         </tr>
                     </thead>
-                    
-                    <BoxRows mv={mvlist} />
-                    
+                    <tbody>
+                        {/* props 사용하기 */}
+                        <BoxRows mv={mvlist} />
+                    </tbody>
                 </table>
             </article>
         </main>

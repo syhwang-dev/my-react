@@ -12,7 +12,7 @@ const MyClock = () => {
             <article data-theme="dark">
                 <MyClockImage />
                 {/* 이미지 두 개 사용: 컨포넌를 가져와 쓸 수 있음.*/}
-                <MyClockImage />
+                {/* <MyClockImage /> */}
                 <MyClockTime />
             </article>
         </main>

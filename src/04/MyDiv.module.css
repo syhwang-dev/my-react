@@ -1,0 +1,16 @@
+.mah1 {
+    color: darkgreen;
+}
+
+.aul {
+    display: flex;
+}
+
+.ali {
+    width: 45%;
+}
+
+/* footer는 클래스가 아니므로 앞에 .을 붙이지 않음 */
+footer {
+    text-align: center;
+}
