@@ -1,0 +1,44 @@
+/* .tftr {
+    height: 30px;
+    background-color: brown;
+}
+
+tfoot td {
+    color: white;
+} */
+
+
+/* .tempsp1 {
+    display: inline-flex;
+    width: 10%;
+    height: 30px;
+    background-color: darkblue;
+    color: white;
+}
+
+.tempsp2 {
+    display: inline-flex;
+    width: 40px;
+    width: 30px;
+
+} */
+
+tfoot {
+    background-color: brown;
+    /* color: white; 안 먹힘*/
+}
+
+.tempsp {
+    color: white;
+}
+
+thead {
+    background-color: darkblue;
+    /* color: white; 안 먹힘*/
+}
+
+thead th {
+    color: white;
+}
+
+
