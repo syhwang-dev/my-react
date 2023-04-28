@@ -1,0 +1,48 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightcoral;
+}
+
+.dt {
+    color: cornsilk;
+    display: inline-flex;
+    justify-content: center;
+    height: 50px;
+    border-radius: 10px;
+    background-color:lightblue;
+}
+
+.dt {
+    display: inline-flex;
+    justify-content: center;
+    height: 50px;
+    border-radius: 10px;
+    background-color:darkslateblue;
+}
+
+.dt:hover {
+    background-color:dodgerblue;
+    font-weight: bold;
+}
+
+.sp1, .sp2 {
+    font-weight: bold;
+}
+
+.sp21 {
+    font-weight: bold;
+    color: blue;
+}
+
+.sp22 {
+    font-weight: bold;
+    color: green;
+}
+
+.sp23 {
+    font-weight: bold;
+    color: red;
+}
+
