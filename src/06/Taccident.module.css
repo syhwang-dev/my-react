@@ -1,0 +1,7 @@
+html {
+    background-color: darksalmon;
+}
+
+.but:hover, .but.active {
+    background-color: brown;
+}

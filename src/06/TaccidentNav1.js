@@ -1,3 +1,5 @@
+import style from'./Taccident.module.css'
+
 const TaccidentNav1 = ({c1, sel1, setSel1}) => {
     // console.log(c1)
     
@@ -11,7 +13,7 @@ const TaccidentNav1 = ({c1, sel1, setSel1}) => {
         <li key={item}>
             {/* <button onClick={(item2) => show(item)}>{item}</button> */}
             {/* <button onClick={(item2) => setSel1(item)}>{item}</button> setSel1(item)에 item 없으면 sel1에 아무 값도 저장되지 않음. */}
-            <button onClick={(item2) => setSel1(item)}>{item}</button>
+            <button className={style.but} onClick={() => setSel1(item)}>{item}</button>
         </li>
     );
 

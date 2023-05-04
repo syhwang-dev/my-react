@@ -66,6 +66,7 @@
 import dataTaccident from './dataTaccident.json'
 import TaccidentNav1 from './TaccidentNav1';
 import TaccidentNav2 from './TaccidentNav2';
+import Detail from './Detail';
 import { useState, useEffect } from 'react';
 
 const Taccident = () => {
@@ -101,14 +102,14 @@ const Taccident = () => {
 
     const [sel1, setSel1] = useState(0);  // 대분류 선택
     const [sel2, setSel2] = useState([]); // 중분류 선택
-    const [selData, setSelData] = useState({}); 
+    const [selData, setSelData] = useState(); 
     
     useEffect(() => {
-        console.log('Taccident sel1 useEffect []', sel1);
+        // console.log('Taccident sel1 useEffect []', sel1);
     }, []);
 
     useEffect(() => {
-        console.log('Taccident sel1 useEffect sel1', sel1);
+        // console.log('Taccident sel1 useEffect sel1', sel1);
     }, [sel1]);
 
     useEffect(() => {
@@ -116,21 +117,28 @@ const Taccident = () => {
         let temp = data.filter((item) =>
             item.사고유형_대분류 === sel2[0] && item.사고유형_중분류 === sel2[1]);
         setSelData(temp[0]);
-        // console.log("setSelData(temp[0])!!!!!!!!!!!!!!", setSelData(temp[0]));
+        // console.log("setSelData(temp[0])", setSelData(temp[0]));
     }, [sel2, data]);
 
     useEffect(() => {
-        console.log('Taccident selData useEffect', selData);
-        
-        // const = []
+        // console.log('Taccident selData useEffect', selData);
+        // let deData = data.filter((item) =>
+        // item.사고유형_대분류 === sel1 && item.사고유형_중분류 === sel2);
 
+        // const content = ["사고건수", "부상신고자수", "경상자수", "중상자수", "사망자수"];
+        // if (deData.length === 1) {selData(content.map((item) =>
+        //     <div>
+        //         <div>{item}</div>
+        //         <div>{deData[0][item]}</div>
+        //     </div>
+        // ))};
+    
     }, [selData])
 
     useEffect(() => {
-        console.log('Taccident sel1 useEffect', sel1);
-        console.log('Taccident sel1 useEffect', sel2);
+        // console.log('Taccident sel1 useEffect', sel1);
+        // console.log('Taccident sel1 useEffect', sel2);
     });
-
 
     return (
         <main className='container'>
@@ -151,13 +159,14 @@ const Taccident = () => {
                         </ul>
                     </nav> */}
                 </header>
+                {/* <div>
+                    {selData}
+                </div> */}
+                {selData && <Detail selData={selData}/>}
             </article>
-            <div>
-                <div>상세내용</div>
-            </div>
-
         </main>
     )
 }
 
 export default Taccident;
+

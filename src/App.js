@@ -5,7 +5,8 @@ import './App.css';
 // import Box from './03/Box';  // return 안에서 주석처리 되어 사용되지 않는 컴포넌트의 import도 주석처리하자. 경고 뜸.
 // import MyDiv from './04/MyDiv';
 // import Frcst from './05/Frcst';
-import Taccident from './06/Taccident';
+// import Taccident from './06/Taccident';
+import MyRef from './07/MyRef';
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
     // </>
     // <MyDiv />
     // <Frcst />
-    <Taccident />
-    
+    // <Taccident />
+    <MyRef/>
   );
 }
 
