@@ -1,0 +1,21 @@
+.sp {
+    display: inline-flex;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: darksalmon;
+    color: white;
+}
+
+button {
+    background-color:beige;
+    border-color:lightpink;
+    border-width: 5px;
+    color:cornflowerblue;
+    font-weight: bold;
+}
+
+label {
+    color: cornflowerblue;
+    font-weight: bold;
+}

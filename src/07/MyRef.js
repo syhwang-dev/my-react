@@ -33,6 +33,7 @@
 // ↑ cnt1의 증가가 화면에 보이지 않는다. 그래서 useState를 사용한다.
 
 import {useRef, useState, useEffect} from "react";
+import style from './MyRef.module.css'
 
 const MyRef = () => {
     const txtref = useRef();
@@ -51,14 +52,24 @@ const MyRef = () => {
         // console.log("addItem");
         e.preventDefault();
         itemArr.current = [...itemArr.current, txtref.current.value];
-        console.log("addItem", itemArr.current);
+        // itemArr.current = new Set(itemArr.current);
+        // itemArr.current = [...itemArr.current];
+        itemArr.current = [...new Set(itemArr.current)];
 
-        // set 코드 추가할 예정
+        new Set(itemArr.current)
+        let tempTag = itemArr.current.map(
+            (item, idx) => <span key={'sp'+idx} className={style.sp}>{item}</span>);
+        
+        setItemTag(tempTag);
+        console.log("addItem", itemArr.current);
+        resetItem();
     }
 
     const resetItem = () => {
         // console.log("resetItem");
-
+        txtref.current.value = '';
+        txtref.current.focus();
+        console.log("resetItem");
     }
 
     return (
@@ -79,8 +90,8 @@ const MyRef = () => {
                         </div>
                     </form>
                 </header>
-                <div className="grid">
-                    {itemTag}
+                <div>
+                {itemTag}
                 </div>
             </article>
         </main>
