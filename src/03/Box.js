@@ -55,7 +55,7 @@ const Box = () => {
 
         fetch(url)
         .then((resp) => resp.json())
-        // .then((data) => console.log(data))
+        .then((data) => console.log("This is data", data))
         .then((data) => setMvlist(data.boxOfficeResult.dailyBoxOfficeList))
         .catch((err) => console.log(err))
     }
