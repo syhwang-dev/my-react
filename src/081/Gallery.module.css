@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Gothic+A1:wght@100&display=swap');
+* {
+    font-family: 'Gamja Flower', cursive;
+}
+.btDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .hd {
+    background-image: url(../img/busan.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+
+.btDiv > button {
+    margin-left: 5px;
+}
+
+h1, h2, h3 {
+    font-family: 'Gamja Flower', cursive;
+    text-align: center;
+}
+
+.tag {
+    background-color:indianred;
+    margin-right: 10px;
+    padding: 1px;
+    border-radius: 10%;
+    color:aliceblue;
+}
+
+/* html {
+    background-color:crimson;
+} */
