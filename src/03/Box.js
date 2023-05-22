@@ -55,7 +55,7 @@ const Box = () => {
 
         fetch(url)
         .then((resp) => resp.json())
-        .then((data) => console.log("This is data", data))
+        // .then((data) => console.log("This is data", data))  // 이 코드가 있으면... 화면에 로드가 안 됨...;
         .then((data) => setMvlist(data.boxOfficeResult.dailyBoxOfficeList))
         .catch((err) => console.log(err))
     }
