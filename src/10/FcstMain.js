@@ -9,7 +9,7 @@ const FcstMain = () => {
     const ops = getxy.map((item) =>
         <option value={item["행정구역코드"]} key={item["행정구역코드"]}>{item["1단계"]}</option>
     );
-    console.log(getxy);
+    // console.log("getxy", getxy);
 
     // state 변수
     const [dt, setDt] = useState();
@@ -30,8 +30,8 @@ const FcstMain = () => {
     // 배열.map → 갯수
     // 배열.filter → 조건에 맞는 것만
 
-    const cityInfo = getxy.map((item) => [item['1단계']])
-    console.log("cityInfo", cityInfo);
+    // const cityInfo = getxy.map((item) => [item['1단계']])
+    // console.log("cityInfo", cityInfo);
 
     const [selCity, setSelCity] = useState("");
     
@@ -45,7 +45,7 @@ const FcstMain = () => {
 
     // dt가 변경되었을 때
     useEffect(() => {
-        console.log(dt);
+        // console.log(dt);
     }, [dt])
 
     // useEffect(()=>{        
@@ -69,7 +69,7 @@ const FcstMain = () => {
         // setCode(parseInt(sel1.current.value));  // 수치데이터이기 때문에 parseInt 해줘야 함.
         // let temp = getxy.filter((item) => item["행정구역코드"] === code)[0];  // 이렇게 되면 오브젝트가 됨.
         let temp = getxy.filter((item) => item["행정구역코드"] === parseInt(sel1.current.value))[0];
-        console.log(temp);
+        // console.log("temp", temp);
         setArea(temp["1단계"]);
         setX(temp["격자 X"]);
         setY(temp["격자 Y"]);
@@ -81,10 +81,9 @@ const FcstMain = () => {
     // const x = '52';
     // const y = '38';
 
-
     return (
         <article>
-            <header><h1>FcstMain</h1></header>
+            <header><h1>일기예보</h1></header>
             <div className='grid'>
                 <div>
                     <input ref={txt1} type="date" id="dt" name="dt" onChange={() => getDt()}/>

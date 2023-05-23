@@ -1,4 +1,4 @@
-// Fcst: 라우팅 정보 생성
+// Fcst.js: 라우팅 정보 생성
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import FcstNav from "./FcstNav";

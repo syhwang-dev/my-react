@@ -3,24 +3,16 @@ import { useEffect, useRef, useState } from 'react';
 import getxy from './getxy.json'
 
 
-const FcstTable = ( {datas, itemName, gubun} ) => {
-    console.log("datas, itemName, gubun", datas, itemName, gubun);
-    console.log("itemName!!!!", itemName);
-    
-
+const FcstTable = ( {info} ) => {
 
     // const [ultraData, setUltraData]  = useState();
 
-    // const ultraData = () => {
-    //     info.filter((item) => {
-    //         return item.category
-    //     })
-    // }
+    const ultraData = () => {
+        info.filter((item) => {
+            return item.category
+        })
+    }
 
-    // for (let itm of datas) {
-    //     // console.log(itm);  // 에러 발생
-    //     let val = parseInt(itm.baseDate);
-    // }
 
     return (
         <article>
@@ -36,7 +28,7 @@ const FcstTable = ( {datas, itemName, gubun} ) => {
                 <tbody>
                     <tr>
                         {/* 항목명 */}
-                        <td>null</td>
+                        <td></td>
                     </tr>
 
                 </tbody>
