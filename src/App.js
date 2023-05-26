@@ -11,6 +11,7 @@ import './App.css';
 // import RouteMain from './09/RouteMain'
 // import Fcst from './10/Fcst';
 import Fcst from './102/Fcst';
+import CodeView from './103/CodeView';
 
 function App() {
   return (
@@ -29,7 +30,9 @@ function App() {
     // <MyRef/>
     // <Gallery/>
     // <RouteMain />
-    <Fcst />
+    // <Fcst />
+    // <h1>App</h1>
+    <CodeView />
   );
 }
 
